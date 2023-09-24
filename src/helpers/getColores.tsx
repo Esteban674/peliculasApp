@@ -13,8 +13,8 @@ export const getImageColors = async (url: string) => {
 
   if (colors.platform === 'android') {
     // Access android properties
-    primary = colors.dominant;
-    secondary = colors.average;
+    primary = colors.average;
+    secondary = colors.dominant;
   } else {
     // Access iOS properties
     primary = (colors as IOSImageColors).primary;
